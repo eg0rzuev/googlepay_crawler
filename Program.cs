@@ -29,7 +29,7 @@ class Crawler
     {
             Br = await Puppeteer.LaunchAsync(new LaunchOptions
             {
-                Headless = false,
+                Headless = true,
                 //CHANGE EXEC PATH IF NECESSARY
                 ExecutablePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
             }).ConfigureAwait(false);
